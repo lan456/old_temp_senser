@@ -1,0 +1,12 @@
+_delaysome: CODE, 870 0 28
+_main: CODE, 1409 0 639
+_set_sevenseg: CODE, 1134 0 121
+___lmul: CODE, 898 0 55
+__initialization: CODE, 813 0 10
+___lldiv: CODE, 1036 0 98
+_ADCRead: CODE, 845 0 25
+___llmod: CODE, 953 0 83
+_config_adc: CODE, 1255 0 154
+_config_port: CODE, 826 0 19
+_config_clock: CODE, 803 0 4
+Total: 1236
