@@ -46,17 +46,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MKL02ZXVFG4 U?
-U 1 1 539905F5
-P 4500 3000
-F 0 "U?" H 4050 2400 60  0000 C CNN
-F 1 "MKL02ZXVFG4" H 5200 2400 60  0000 C CNN
-F 2 "~" H 4500 3000 60  0000 C CNN
-F 3 "~" H 4500 3000 60  0000 C CNN
-	1    4500 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L SI7020 U?
 U 1 1 53990604
 P 7300 3000
@@ -124,45 +113,122 @@ Text Label 8100 2850 0    60   ~ 0
 SCL
 Text Label 6500 2850 2    60   ~ 0
 SDA
-Text Label 3650 3000 2    60   ~ 0
+Text Label 3750 3300 2    60   ~ 0
 SDA
-Text Label 3650 3150 2    60   ~ 0
+Text Label 3750 3450 2    60   ~ 0
 SCL
-Wire Wire Line
-	3750 3000 3650 3000
-Wire Wire Line
-	3650 3150 3750 3150
-Text Label 3650 2700 2    60   ~ 0
+Text Label 3750 3000 2    60   ~ 0
 VCC
-Wire Wire Line
-	3650 2700 3750 2700
 $Comp
 L GND #PWR?
 U 1 1 5399E2DF
-P 3650 2850
-F 0 "#PWR?" H 3650 2850 30  0001 C CNN
-F 1 "GND" H 3650 2780 30  0001 C CNN
-F 2 "" H 3650 2850 60  0000 C CNN
-F 3 "" H 3650 2850 60  0000 C CNN
-	1    3650 2850
+P 3650 3150
+F 0 "#PWR?" H 3650 3150 30  0001 C CNN
+F 1 "GND" H 3650 3080 30  0001 C CNN
+F 2 "" H 3650 3150 60  0000 C CNN
+F 3 "" H 3650 3150 60  0000 C CNN
+	1    3650 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 2850 3750 2850
-Text Label 4350 2000 1    60   ~ 0
+	3650 3150 3750 3150
+Text Label 4350 2100 1    60   ~ 0
 SWDIO
-Text Label 4500 2000 1    60   ~ 0
+Text Label 4500 2100 1    60   ~ 0
 NRST
-Text Label 4650 2000 1    60   ~ 0
+Text Label 4650 2100 1    60   ~ 0
 SWD_CLK
-Wire Wire Line
-	4350 2000 4350 2100
-Wire Wire Line
-	4500 2000 4500 2100
-Wire Wire Line
-	4650 2000 4650 2100
 Text Label 8000 3000 0    60   ~ 0
 VCC
 Wire Wire Line
 	8000 3000 7900 3000
+Text Label 8950 1700 1    60   ~ 0
+LED_AA
+Text Label 9100 1700 1    60   ~ 0
+LED_AB
+Text Label 9100 3400 3    60   ~ 0
+LED_AE
+Text Label 9250 3400 3    60   ~ 0
+LED_AC
+$Comp
+L MKL02Z16VFK4 U?
+U 1 1 5399EECC
+P 4500 3150
+F 0 "U?" H 4000 2450 60  0000 C CNN
+F 1 "MKL02Z16VFK4" H 3850 4000 60  0000 C CNN
+F 2 "" H 4500 3150 60  0000 C CNN
+F 3 "" H 4500 3150 60  0000 C CNN
+	1    4500 3150
+	1    0    0    -1  
+$EndComp
+Text Label 9250 1700 1    60   ~ 0
+LED_C2
+Text Label 9400 1700 1    60   ~ 0
+LED_AF
+Text Label 9550 1700 1    60   ~ 0
+LED_AD
+Text Label 9700 1700 1    60   ~ 0
+LED_AG
+Text Label 8950 3400 3    60   ~ 0
+LED_C1
+Text Label 9400 3400 3    60   ~ 0
+LED_C3
+Text Label 9550 3400 3    60   ~ 0
+LED_ADP
+Text Label 9700 3400 3    60   ~ 0
+LED_C4
+Text Label 6050 6350 0    60   ~ 0
+LED_AE
+Text Label 6050 6500 0    60   ~ 0
+LED_AC
+Text Label 6050 6650 0    60   ~ 0
+LED_ADP
+Text Label 6050 5700 0    60   ~ 0
+LED_AA
+Text Label 6050 5550 0    60   ~ 0
+LED_AB
+Text Label 6050 5400 0    60   ~ 0
+LED_AF
+Text Label 6050 5250 0    60   ~ 0
+LED_AD
+Text Label 6050 6800 0    60   ~ 0
+LED_AG
+Text Label 5000 5700 2    60   ~ 0
+LED_CNTRL_AA
+Text Label 5000 5550 2    60   ~ 0
+LED_CNTRL_AB
+Text Label 5000 5400 2    60   ~ 0
+LED_CNTRL_AF
+Text Label 5000 5250 2    60   ~ 0
+LED_CNTRL_AD
+Text Label 5000 6800 2    60   ~ 0
+LED_CNTRL_AG
+Text Label 5000 6650 2    60   ~ 0
+LED_CNTRL_ADP
+Text Label 5000 6500 2    60   ~ 0
+LED_CNTRL_AC
+Text Label 5000 6350 2    60   ~ 0
+LED_CNTRL_AE
+$Comp
+L RES_NET_4 RN?
+U 1 1 5399F32C
+P 5600 5550
+F 0 "RN?" H 5500 5250 60  0000 C CNN
+F 1 "RES_NET_4" H 5550 6000 60  0000 C CNN
+F 2 "" H 5250 5450 60  0000 C CNN
+F 3 "" H 5250 5450 60  0000 C CNN
+	1    5600 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L RES_NET_4 RN?
+U 1 1 5399F343
+P 5600 6650
+F 0 "RN?" H 5500 6350 60  0000 C CNN
+F 1 "RES_NET_4" H 5550 7100 60  0000 C CNN
+F 2 "" H 5250 6550 60  0000 C CNN
+F 3 "" H 5250 6550 60  0000 C CNN
+	1    5600 6650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
