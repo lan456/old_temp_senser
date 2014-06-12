@@ -1,4 +1,3 @@
-old_temp_sense
-==============
-
-old temperature sensor design, not very good.
+Temperatuer Sensor- bubble_ver
+=====
+Updated version, with hp bubble display & silabs temp+humidity sensor.
